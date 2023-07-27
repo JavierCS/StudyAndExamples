@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcB-ws-ciy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SKOverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-v0-d2z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEe-uT-W3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                        <state key="normal" title="SKOverlay con Applicación ya instalada"/>
+                                        <connections>
+                                            <action selector="didTouchAnyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fn4-EF-48O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs4-mw-Qcf">
+                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
+                                        <state key="normal" title="SKOverlay con aplicación adquirida pero sin descargar"/>
+                                        <connections>
+                                            <action selector="didTouchAnyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNv-R7-Osa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7j-jb-kLD">
+                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
+                                        <state key="normal" title="SKOverlay con aplicación nueva"/>
+                                        <connections>
+                                            <action selector="didTouchAnyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhQ-0i-zZa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kfv-v0-d2z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RH7-dO-h5M"/>
+                            <constraint firstItem="Kfv-v0-d2z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W2N-f2-Cr0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfv-v0-d2z" secondAttribute="trailing" id="ga3-qT-YPd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kfv-v0-d2z" secondAttribute="bottom" id="w2x-E5-fw4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ViewController" id="W6M-EB-hYB"/>
+                    <connections>
+                        <outlet property="btnInstalledApp" destination="KEe-uT-W3i" id="RBj-nl-l0b"/>
+                        <outlet property="btnNewApp" destination="O7j-jb-kLD" id="dlz-0N-Cz7"/>
+                        <outlet property="btnObtainedApp" destination="zs4-mw-Qcf" id="H7j-uV-3wg"/>
+                        <segue destination="yrB-v8-vim" kind="presentation" identifier="showSKOverlay" id="0YE-84-ilB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="94.419642857142847"/>
+        </scene>
+        <!--SKOverlayViewController-->
+        <scene sceneID="rb8-2b-Svy">
+            <objects>
+                <viewController id="yrB-v8-vim" customClass="SKOverlayViewController" customModule="SKOverlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RoC-uT-6js">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W1A-l8-1ve">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJv-2L-2FW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AIc-d9-JEF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v65-nl-Ri3">
+                                <rect key="frame" x="20" y="40" width="374" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TMO-Cs-m3w">
+                                <rect key="frame" x="40" y="254" width="334" height="334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TMO-Cs-m3w" secondAttribute="height" multiplier="1:1" id="Uor-Qz-Doe"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MeY-qD-ZiU">
+                                <rect key="frame" x="20" y="672" width="374" height="126"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-7i-9si">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7zP-CI-xqQ"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-zg-NWb">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="76"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv1-lv-y8K">
+                                                <rect key="frame" x="0.0" y="10" width="374" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="HQm-A9-EA4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Ver en App Store"/>
+                                                <connections>
+                                                    <action selector="didTouchSeeInAppStoreButton:" destination="yrB-v8-vim" eventType="touchUpInside" id="8O6-2c-mQb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Xv1-lv-y8K" secondAttribute="bottom" constant="10" id="GNc-DS-rrw"/>
+                                            <constraint firstItem="Xv1-lv-y8K" firstAttribute="top" secondItem="X0F-zg-NWb" secondAttribute="top" constant="10" id="rLH-4J-5sl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xv1-lv-y8K" secondAttribute="trailing" id="thx-oK-qmX"/>
+                                            <constraint firstItem="Xv1-lv-y8K" firstAttribute="leading" secondItem="X0F-zg-NWb" secondAttribute="leading" id="wCd-nn-qgT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gbt-bB-OPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v65-nl-Ri3" firstAttribute="top" secondItem="gbt-bB-OPI" secondAttribute="top" constant="40" id="7L4-nc-NEt"/>
+                            <constraint firstItem="MeY-qD-ZiU" firstAttribute="leading" secondItem="gbt-bB-OPI" secondAttribute="leading" constant="20" id="8q3-db-Ycn"/>
+                            <constraint firstAttribute="bottom" secondItem="gJv-2L-2FW" secondAttribute="bottom" id="CHC-H7-EdX"/>
+                            <constraint firstItem="v65-nl-Ri3" firstAttribute="leading" secondItem="gbt-bB-OPI" secondAttribute="leading" constant="20" id="G0Y-Un-Ric"/>
+                            <constraint firstItem="gJv-2L-2FW" firstAttribute="trailing" secondItem="gbt-bB-OPI" secondAttribute="trailing" id="JLC-S2-TlY"/>
+                            <constraint firstItem="W1A-l8-1ve" firstAttribute="trailing" secondItem="gbt-bB-OPI" secondAttribute="trailing" id="L1e-Il-C7u"/>
+                            <constraint firstItem="TMO-Cs-m3w" firstAttribute="centerY" secondItem="RoC-uT-6js" secondAttribute="centerY" id="NUP-yP-xFe"/>
+                            <constraint firstItem="gJv-2L-2FW" firstAttribute="leading" secondItem="gbt-bB-OPI" secondAttribute="leading" id="P0R-mc-d9c"/>
+                            <constraint firstItem="gbt-bB-OPI" firstAttribute="trailing" secondItem="v65-nl-Ri3" secondAttribute="trailing" constant="20" id="ZTz-J4-udz"/>
+                            <constraint firstItem="W1A-l8-1ve" firstAttribute="top" secondItem="gbt-bB-OPI" secondAttribute="top" id="c4f-p5-mKq"/>
+                            <constraint firstItem="gJv-2L-2FW" firstAttribute="top" secondItem="gbt-bB-OPI" secondAttribute="top" id="dRF-64-xOe"/>
+                            <constraint firstItem="gbt-bB-OPI" firstAttribute="trailing" secondItem="MeY-qD-ZiU" secondAttribute="trailing" constant="20" id="gNs-b9-nX5"/>
+                            <constraint firstItem="TMO-Cs-m3w" firstAttribute="leading" secondItem="gbt-bB-OPI" secondAttribute="leading" constant="40" id="hbR-f3-a74"/>
+                            <constraint firstItem="gbt-bB-OPI" firstAttribute="trailing" secondItem="TMO-Cs-m3w" secondAttribute="trailing" constant="40" id="kYY-wV-EPt"/>
+                            <constraint firstItem="MeY-qD-ZiU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TMO-Cs-m3w" secondAttribute="bottom" constant="10" id="l3r-KT-dJ5"/>
+                            <constraint firstItem="gbt-bB-OPI" firstAttribute="bottom" secondItem="MeY-qD-ZiU" secondAttribute="bottom" constant="10" id="wA7-hu-kaz"/>
+                            <constraint firstItem="W1A-l8-1ve" firstAttribute="leading" secondItem="gbt-bB-OPI" secondAttribute="leading" id="z9W-xl-UD5"/>
+                            <constraint firstAttribute="bottom" secondItem="W1A-l8-1ve" secondAttribute="bottom" id="zlJ-Oa-2LQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SKOverlayViewController" id="Eyq-hM-FPd"/>
+                    <connections>
+                        <outlet property="aiProgress" destination="Tx6-7i-9si" id="D4r-7V-rFQ"/>
+                        <outlet property="btnSeeInAppStore" destination="Xv1-lv-y8K" id="PX9-Dw-z4Q"/>
+                        <outlet property="imvAppLogo" destination="TMO-Cs-m3w" id="zN8-7r-Epj"/>
+                        <outlet property="imvBackground" destination="W1A-l8-1ve" id="ilQ-7l-egS"/>
+                        <outlet property="lblAppName" destination="v65-nl-Ri3" id="UXq-jD-wjZ"/>
+                        <outlet property="vSeeInAppStore" destination="X0F-zg-NWb" id="1VR-cB-1lH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stG-8M-9hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.6376811594205" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tbs-hj-doU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fcB-ws-ciy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cb2-D9-IBQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nbq-Wz-PRt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyl-Wr-kHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DaL-ov-vha">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Opciones-->
+        <scene sceneID="zVC-6s-dFC">
+            <objects>
+                <viewController id="rVe-hU-Qov" customClass="FileSelectionViewController" customModule="AVPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iwr-Mb-dXG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-Ec-jFY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="obF-70-5uq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3f8-Ec-jFY" firstAttribute="leading" secondItem="obF-70-5uq" secondAttribute="leading" id="Mgv-C3-pdq"/>
+                            <constraint firstItem="3f8-Ec-jFY" firstAttribute="top" secondItem="obF-70-5uq" secondAttribute="top" id="YNq-Zh-4tM"/>
+                            <constraint firstItem="3f8-Ec-jFY" firstAttribute="trailing" secondItem="obF-70-5uq" secondAttribute="trailing" id="gAc-ZW-Qhy"/>
+                            <constraint firstItem="3f8-Ec-jFY" firstAttribute="bottom" secondItem="obF-70-5uq" secondAttribute="bottom" id="uQG-Gk-DOe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Opciones" id="0t2-3m-xJZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="3f8-Ec-jFY" id="KGl-JE-UDD"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toContentView" id="Fdd-Mw-sLM"/>
+                        <segue destination="gTI-3j-VH9" kind="show" identifier="toSubLayer" id="Eyr-D7-z2H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRv-vk-0MT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="105.80357142857143"/>
+        </scene>
+        <!--Container View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ContainerViewController" customModule="AVPlayer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-UL-RwF">
+                                <rect key="frame" x="20" y="64" width="374" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMk-Qn-4qE">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <state key="normal" title="Regresar"/>
+                                        <connections>
+                                            <action selector="didTouchBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ypk-77-6dz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buenas tardes," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uav-uw-IhE">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Javier Cruz Santiago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsF-jG-iUK">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyc-xN-8IM">
+                                <rect key="frame" x="0.0" y="180" width="414" height="716"/>
+                                <connections>
+                                    <segue destination="Wbu-ri-atb" kind="embed" id="D1W-F0-iba"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6z0-UL-RwF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2yr-Mm-MHR"/>
+                            <constraint firstItem="Pyc-xN-8IM" firstAttribute="top" secondItem="6z0-UL-RwF" secondAttribute="bottom" id="59J-SG-H9I"/>
+                            <constraint firstAttribute="bottom" secondItem="Pyc-xN-8IM" secondAttribute="bottom" id="OmM-he-TQC"/>
+                            <constraint firstItem="Pyc-xN-8IM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ThF-wK-2N3"/>
+                            <constraint firstItem="Pyc-xN-8IM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cZR-q4-QRH"/>
+                            <constraint firstItem="6z0-UL-RwF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jQj-ps-9Xh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6z0-UL-RwF" secondAttribute="trailing" constant="20" id="w0Z-ux-uja"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ho1-9L-4L6"/>
+                    <navigationItem key="navigationItem" title="Container View" id="F0R-zR-GxY"/>
+                    <connections>
+                        <outlet property="containerView" destination="Pyc-xN-8IM" id="mO2-pn-Pjr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="105.80357142857143"/>
+        </scene>
+        <!--Sub Layer-->
+        <scene sceneID="3qV-lQ-EFD">
+            <objects>
+                <viewController id="gTI-3j-VH9" customClass="SubLayerViewController" customModule="AVPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rxj-kI-JqY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-L9-mYU">
+                                <rect key="frame" x="20" y="64" width="374" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I98-uO-hJl">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <state key="normal" title="Regresar"/>
+                                        <connections>
+                                            <action selector="didTouchBackButton:" destination="gTI-3j-VH9" eventType="touchUpInside" id="C12-0b-ISD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buenas tardes," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xs-eP-cwd">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Javier Cruz Santiago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et4-8V-GdM">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lWi-AD-mUR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QtQ-L9-mYU" firstAttribute="top" secondItem="lWi-AD-mUR" secondAttribute="top" constant="20" id="Dn6-2W-8kk"/>
+                            <constraint firstItem="QtQ-L9-mYU" firstAttribute="leading" secondItem="lWi-AD-mUR" secondAttribute="leading" constant="20" id="dFJ-6I-yfv"/>
+                            <constraint firstItem="lWi-AD-mUR" firstAttribute="trailing" secondItem="QtQ-L9-mYU" secondAttribute="trailing" constant="20" id="jsT-IQ-g3k"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Sxj-Mr-RQW"/>
+                    <navigationItem key="navigationItem" title="Sub Layer" id="Ols-Qb-AYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZ7-ch-XgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="835"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qXU-Fa-ix6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DaL-ov-vha" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eyC-gk-uLz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rVe-hU-Qov" kind="relationship" relationship="rootViewController" id="wPN-8a-Omy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ua-OU-loJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="R1V-DT-Vgu">
+            <objects>
+                <viewController id="Wbu-ri-atb" customClass="VideoViewController" customModule="AVPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqZ-1U-09i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6c1-oD-lhD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DST-at-y3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2766.666666666667" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
