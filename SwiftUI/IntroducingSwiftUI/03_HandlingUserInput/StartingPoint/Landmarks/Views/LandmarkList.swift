@@ -1,3 +1,10 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing a list of landmarks.
+*/
+
 import SwiftUI
 
 struct LandmarkList: View {
@@ -9,7 +16,6 @@ struct LandmarkList: View {
                 } label: {
                     LandmarkRow(landmark: landmark)
                 }
-
             }
             .navigationTitle("Landmarks")
         }
