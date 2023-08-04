@@ -38,6 +38,7 @@
 		7F20F8252A7B4BE200B26623 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20F8242A7B4BE200B26623 /* ProfileHost.swift */; };
 		7F20F8272A7B4C5600B26623 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20F8262A7B4C5600B26623 /* ProfileSummary.swift */; };
 		7F20F8292A7B51EB00B26623 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20F8282A7B51EB00B26623 /* HikeBadge.swift */; };
+		7F7125102A7D70EF00CD3979 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F71250F2A7D70EF00CD3979 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		7F20F8242A7B4BE200B26623 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		7F20F8262A7B4C5600B26623 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		7F20F8282A7B51EB00B26623 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		7F71250F2A7D70EF00CD3979 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		7F20F8232A7B4BC500B26623 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
+				7F71250F2A7D70EF00CD3979 /* ProfileEditor.swift */,
 				7F20F8242A7B4BE200B26623 /* ProfileHost.swift */,
 				7F20F8262A7B4C5600B26623 /* ProfileSummary.swift */,
 			);
@@ -311,6 +314,7 @@
 				7F20F8102A7B17C600B26623 /* Hike.swift in Sources */,
 				7F20F7FD2A7A1E7800B26623 /* LandmarkDetail.swift in Sources */,
 				7F20F80A2A7B0C6E00B26623 /* BadgeSymbol.swift in Sources */,
+				7F7125102A7D70EF00CD3979 /* ProfileEditor.swift in Sources */,
 				7F20F8052A7B03F900B26623 /* BadgeBackground.swift in Sources */,
 				7F20F8192A7B196C00B26623 /* HikeView.swift in Sources */,
 				7F20F7EC2A79EDE700B26623 /* CircleImage.swift in Sources */,

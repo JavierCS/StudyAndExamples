@@ -9,6 +9,7 @@ struct CategoryHome: View {
             List {
                 modelData.features[0].image
                     .resizable()
+                    .scaledToFill()
                     .frame(height: 200)
                     .clipped()
                     .listRowInsets(EdgeInsets())
@@ -17,6 +18,7 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .listStyle(.inset)
             .navigationTitle("Featured")
             .toolbar {
                 Button {
