@@ -20,9 +20,30 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
 
 
+## Macros
+
+**`#Preview`**: Creates a preview of a SwiftUI view.
+
+``````swift
+#Preview("Preview Name") {
+	SomeView()
+}
+
+#Preview("Preview Two Name") {
+	SomeView(state: .someState)
+}
+
+#Preview("Group") {
+	Group {
+		SomeView()
+    SomeView(state: .someState)we
+  }
+}
+``````
+
+
+
 ## Controls
-
-
 
 * `VStack`: Stack's elements vertically.
 
@@ -70,7 +91,118 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
   VStack {
     SomeContentView()
     Divider()
-    OtherContentView()
+    OtherContentView()t
+  }
+  ``````
+
+* `List`:
+
+  ``````swift
+  import SwiftUI
+  import CoreLocation
+  
+  struct Landmark: Hashable, Codable, Identifiable {
+      var id: Int
+      var name: String
+      var park: String
+      var state: String
+      var description: String
+      
+      private var imageName: String
+      var image: Image {
+          Image(imageName)
+      }
+      
+      private var coordinates: Coordinates
+      var locationCoordinate: CLLocationCoordinate2D {
+          CLLocationCoordinate2D(
+              latitude: coordinates.latitude,
+              longitude: coordinates.longitude)
+      }
+      
+      struct Coordinates: Hashable, Codable {
+          var latitude: Double
+          var longitude: Double
+      }
+  }
+  
+  struct LandmarkList: View {
+      var body: some View {
+          List(landmarks) { landmark in
+              LandmarkRow(landmark: landmark)
+          }
+      }
+  }
+  ``````
+
+* `NavigationSplitView`: A view that presents views in two or three columns, where selections in leading columns control presentations in subsequent columns.
+
+  ``````swift
+  import SwiftUI
+  
+  struct LandmarkList: View {
+      var body: some View {
+          NavigationSplitView {
+              List(landmarks) { landmark in
+              	LandmarkRow(landmark: landmark)
+              }
+              .navigationTitle("Landmarks")
+          } detail: {
+              Text("Select a Landmark")
+          }
+      }
+  }
+  ``````
+
+* `NavigationLink`: A view that controls a navigation presentation.
+
+  ``````swift
+  List(landmarks) { landmark in
+  	NavigationLink {
+  		LandmarkDetail(landmark: landmark)
+  	} label: {
+  		LandmarkRow(landmark: landmark)
+  	}
+  }
+  ``````
+
+* `ScrollView`: A scrollable view. The scroll view displays its content within the scrollable content region. 
+
+  ``````swift
+  import SwiftUI
+  
+  struct LandmarkDetail: View {
+      var landmark: Landmark
+      
+      var body: some View {
+          ScrollView {
+              MapView(coordinate: landmark.locationCoordinate)
+                  .frame(height: 300)
+              
+              CircleImage(image: landmark.image)
+                  .offset(y: -130)
+                  .padding(.bottom, -130)
+              
+              VStack(alignment: .leading) {
+                  Text(landmark.name)
+                      .font(.title)
+                  HStack {
+                      Text(landmark.park)
+                      Spacer()
+                      Text(landmark.state)
+                  }
+                  .font(.subheadline)
+                  .foregroundStyle(.secondary)
+                  Divider()
+                  Text("About \(landmark.name)")
+                      .font(.title2)
+                  Text(landmark.description)
+              }
+              .padding()
+          }
+          .navigationTitle(landmark.name)
+          .navigationBarTitleDisplayMode(.inline)
+      }
   }
   ``````
 
@@ -131,7 +263,25 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
   	.offset(y: -130)
   ``````
 
+* `.navigationTitle()`: Configures the view’s title for purposes of navigation, using a string.
+
+  ``````swift
+  SomeView()
+  	.navigationTitle("SomeNavigationBarTitleForThisView")
+  ``````
+
   
+
+* `.navigationBarTitleDisplayMode()`: Configures the title display mode for this view.
+
+  ``````swift
+  SomeView()
+  	.navigationBarTitleDisplayMode(.inline)
+  ``````
+
+  
+
+
 
 ### Shape Modifiers
 
@@ -145,6 +295,8 @@ Image("turtlerock")
 			.stroke(.gray, lineWidth: 4)
 	}
 ``````
+
+
 
 ### Text Modifiers
 
@@ -169,5 +321,39 @@ Image("turtlerock")
 
 
 
+### Image Modifiers
+
+* `.resizable()`: Sets the mode by which SwiftUI resizes an image to fit its space.
+
+  ``````swift
+  Image("someImageName")
+  	.resizable()
+  ``````
+
+  
+
 ## MapKit
+
+``````swift
+import SwiftUI
+import MapKit
+
+struct MapView: View {
+    var body: some View {
+        Map(initialPosition: .region(region))
+    }
+    
+    private var region: MKCoordinateRegion {
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
+            span:  MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        )
+    }
+}
+
+#Preview {
+    MapView()
+}
+
+``````
 
