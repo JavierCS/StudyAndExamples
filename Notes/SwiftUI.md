@@ -14,25 +14,11 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
 
 
-## Concepts
-
-* **Source of truth**: Refers to the single, authoritative place where the actual data or state for a view resides
-
-
-
 ## Labels
 
 **`@main`**: Identifies the app's entry point.
 
-**`@State`**: `@State` is a value, or a set of values that can change over time, and that affects a vie´s behavior, content, or layout.
 
-**`@Binding`**: A property wrapper type that can read and write a value owned by a source of truth.
-
-**`@Bindable`**: A property wrapper type that supports creating bindings to the mutable properties of observable objects.
-
-**`@Observable`**: Defines and implements conformance of the Observable protocol.
-
-**`@Environment`**: A property wrapper that reads a value from a view’s environment.H
 
 ## Macros
 
@@ -221,11 +207,18 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
   ``````
 
 
-* `Toggle`: A control that toggles between on and off states.
+* `Path`: The outline of a 2D shape.
+
+  ``````
+  ``````
+
+* `GeometryReader`: A container view that defines its content as a function of its own size and coordinate space.
 
   ``````swift
-  Toggle(isOn: $showFavoritesOnly) {
-  	Text("Favorites Only")
+  GeometryReader { geometry in
+  	badgeSymbols
+  		.scaleEffect(1.0 / 4.0, anchor: .top)
+  		.position(x: geometry.size.width / 2, y: (3.0 / 4.0) * geometry.size.height)
   }
   ``````
 
@@ -290,22 +283,16 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
   ``````swift
   SomeView()
-  	.navigationTitle("SomeNavigationBarTitleForThisView")La
+  	.navigationTitle("SomeNavigationBarTitleForThisView")
   ``````
+
+  
 
 * `.navigationBarTitleDisplayMode()`: Configures the title display mode for this view.
 
   ``````swift
   SomeView()
   	.navigationBarTitleDisplayMode(.inline)
-  ``````
-
-
-* `.envirionment`: Places an observable object in the view’s environment.
-
-  ``````swift
-  SomeView()
-  	.environment(SomethingThatImplementsObservable())
   ``````
 
   
@@ -316,16 +303,18 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
 * `.stroke()`: Traces the outline of this shape with a color or gradient.
 
-``````swift
-Image("turtlerock")
-	.clipShape(Circle())
-	.overlay {
-		Circle()
-			.stroke(.gray, lineWidth: 4)
-	}
-``````
+  ``````swift
+  Image("turtlerock")
+  	.clipShape(Circle())
+  	.overlay {
+  		Circle()
+  			.stroke(.gray, lineWidth: 4)
+    }
+  ``````
 
+* `.fill()`: Turn the shape into a view.
 
+  
 
 ### Text Modifiers
 
