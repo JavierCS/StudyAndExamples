@@ -14,11 +14,25 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
 
 
+## Concepts
+
+* **Source of truth**: Refers to the single, authoritative place where the actual data or state for a view resides
+
+
+
 ## Labels
 
 **`@main`**: Identifies the app's entry point.
 
+**`@State`**: `@State` is a value, or a set of values that can change over time, and that affects a vie´s behavior, content, or layout.
 
+**`@Binding`**: A property wrapper type that can read and write a value owned by a source of truth.
+
+**`@Bindable`**: A property wrapper type that supports creating bindings to the mutable properties of observable objects.
+
+**`@Observable`**: Defines and implements conformance of the Observable protocol.
+
+**`@Environment`**: A property wrapper that reads a value from a view’s environment.H
 
 ## Macros
 
@@ -206,6 +220,15 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
   }
   ``````
 
+
+* `Toggle`: A control that toggles between on and off states.
+
+  ``````swift
+  Toggle(isOn: $showFavoritesOnly) {
+  	Text("Favorites Only")
+  }
+  ``````
+
   
 
 
@@ -267,16 +290,22 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
   ``````swift
   SomeView()
-  	.navigationTitle("SomeNavigationBarTitleForThisView")
+  	.navigationTitle("SomeNavigationBarTitleForThisView")La
   ``````
-
-  
 
 * `.navigationBarTitleDisplayMode()`: Configures the title display mode for this view.
 
   ``````swift
   SomeView()
   	.navigationBarTitleDisplayMode(.inline)
+  ``````
+
+
+* `.envirionment`: Places an observable object in the view’s environment.
+
+  ``````swift
+  SomeView()
+  	.environment(SomethingThatImplementsObservable())
   ``````
 
   
