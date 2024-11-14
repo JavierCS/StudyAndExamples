@@ -166,6 +166,8 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
   }
   ``````
 
+  Text that you pass as the label for a navigation link renders using the environment’s accent color, and images may render as template images. You can modify either behavior to best suit your design using the `.renderingMode()` modifier for images and the `.foregroundStyle()` modifier for texts.
+
 * `ScrollView`: A scrollable view. The scroll view displays its content within the scrollable content region. 
 
   ``````swift
