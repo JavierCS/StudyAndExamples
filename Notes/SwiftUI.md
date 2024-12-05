@@ -18,7 +18,23 @@ An app that uses the SwiftUI app life cycle has a structure that conforms to the
 
 **`@main`**: Identifies the app's entry point.
 
+**```@State```**:
 
+**```@StateObject```**:
+
+**```@Binding```**:
+
+**```@Bindable```**:
+
+**```@ObservedObject```**:
+
+**```@Published```**:
+
+**```@Environment```**:
+
+**```@FocusedBinding```**:
+
+**```AppStorage```**:
 
 ## Macros
 
