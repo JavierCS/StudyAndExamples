@@ -1,0 +1,599 @@
+{
+    "wallet": {
+        "walletItems": [
+            {
+                "id": "8355F33A-5E82-4C75-8C96-0CDA15DBD8E7",
+                "type": "debt",
+                "imageName": "card",
+                "image": null,
+                "name": "debtCard",
+                "colorName": "DebtColor",
+                "balance": 0.0,
+                "interestRate": null,
+                "canBeDeleted": false
+            },
+            {
+                "id": "9B8B30FA-98AB-4E48-87BA-76E5CB3D52E7",
+                "type": "credit",
+                "imageName": "card",
+                "image": null,
+                "name": "creditCard",
+                "colorName": "CreditColor",
+                "balance": 0.0,
+                "interestRate": null,
+                "canBeDeleted": false
+            },
+            {
+                "id": "24F75884-918F-49F4-B8C0-3C9B9BBE080E",
+                "type": "cash",
+                "imageName": "coin",
+                "image": null,
+                "name": "cash",
+                "colorName": "CashColor",
+                "balance": 0.0,
+                "interestRate": null,
+                "canBeDeleted": false
+            },
+            {
+                "id": "20f2d4a5-7d0d-4bba-90ec-68c43a7f014e",
+                "type": "investment",
+                "imageName": "investments",
+                "image": null,
+                "name": "investmentAccount",
+                "colorName": "InvestmentColor",
+                "balance": 0.0,
+                "interestRate": 0.0,
+                "canBeDeleted": false
+            }
+        ]
+    },
+    "categories": [
+        {
+            "id": "ade14f5d-7570-4ce8-baff-86a244d87020",
+            "localizedNameId": "miscellaneous",
+            "name": null,
+            "colorName": "MiscellaneousColor",
+            "subCategories": [
+                {
+                    "id": "900d670a-cf7d-48d0-9e50-855c54257eaf",
+                    "categoryId": "ade14f5d-7570-4ce8-baff-86a244d87020",
+                    "localizedNameId": "wellness",
+                    "name": null,
+                    "imageName": "wellness"
+                },
+                {
+                    "id": "c63ee49b-c2fa-4aa7-af3c-720b8c550485",
+                    "categoryId": "ade14f5d-7570-4ce8-baff-86a244d87020",
+                    "localizedNameId": "bankCost",
+                    "name": null,
+                    "imageName": "bankCost"
+                },
+                {
+                    "id": "3b4684e7-1522-4b78-bda4-80340d75d55d",
+                    "categoryId": "ade14f5d-7570-4ce8-baff-86a244d87020",
+                    "localizedNameId": "transferBetweenOwnAccounts",
+                    "name": null,
+                    "imageName": "transferBetweenOwnAccounts"
+                },
+                {
+                    "id": "2245af9e-517b-49f7-a732-6a2055776367",
+                    "categoryId": "ade14f5d-7570-4ce8-baff-86a244d87020",
+                    "localizedNameId": "unknown",
+                    "name": null,
+                    "imageName": "unknown"
+                }
+            ]
+        },
+        {
+            "id": "38315249-a10c-45e5-998b-7112c640f10a",
+            "localizedNameId": "entertainment",
+            "name": null,
+            "colorName": "EntertainmentColor",
+            "subCategories": [
+                {
+                    "id": "901c3f33-8262-456a-84c9-f4a5f3df4baa",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "bowling",
+                    "name": null,
+                    "imageName": "bowling"
+                },
+                {
+                    "id": "a0b3b8ee-3fca-43d7-8555-6cb458bfc325",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "cinema",
+                    "name": null,
+                    "imageName": "cinema"
+                },
+                {
+                    "id": "f62ffc5f-03d2-45fe-9ef4-ddba9db50892",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "concert",
+                    "name": null,
+                    "imageName": "concert"
+                },
+                {
+                    "id": "f557beb1-86c7-4b3a-824b-594115bb905a",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "sports",
+                    "name": null,
+                    "imageName": "sports"
+                },
+                {
+                    "id": "620ab6ec-e455-41d5-ba6f-3425c5affe11",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "nightclub",
+                    "name": null,
+                    "imageName": "nightclub"
+                },
+                {
+                    "id": "91aa2e2c-1484-4141-adce-593d3336193a",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "electronics",
+                    "name": null,
+                    "imageName": "electronics"
+                },
+                {
+                    "id": "99cec3df-61e1-43f2-8e11-d9aebdfd5f4e",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "videoGames",
+                    "name": null,
+                    "imageName": "videoGames"
+                },
+                {
+                    "id": "28775e04-e050-4c21-883c-c258cd896089",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "entertainment",
+                    "name": null,
+                    "imageName": "entertainment"
+                },
+                {
+                    "id": "66651699-cbec-4f0f-a143-3d81035d1c39",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "gym",
+                    "name": null,
+                    "imageName": "gym"
+                },
+                {
+                    "id": "77a575fd-2382-446a-a01a-eb1d94721728",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "hobby",
+                    "name": null,
+                    "imageName": "hobby"
+                },
+                {
+                    "id": "3b46b23e-c64d-4dd2-a9ba-830ff7a4cd51",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "subscription",
+                    "name": null,
+                    "imageName": "subscription"
+                },
+                {
+                    "id": "abb8883f-b731-482e-9b39-403d60d81ed4",
+                    "categoryId": "38315249-a10c-45e5-998b-7112c640f10a",
+                    "localizedNameId": "vacation",
+                    "name": null,
+                    "imageName": "vacation"
+                }
+            ]
+        },
+        {
+            "id": "db84e832-0150-4578-9d0f-4a58a8f31681",
+            "localizedNameId": "foodAndDrink",
+            "name": null,
+            "colorName": "FoodAndDrinkColor",
+            "subCategories": [
+                {
+                    "id": "4a9224c9-882a-4eb1-848d-c6386e47bc92",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "groceries",
+                    "name": null,
+                    "imageName": "groceries"
+                },
+                {
+                    "id": "aeaee51e-c64b-41cd-a353-1d7cb038e1cf",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "beverages",
+                    "name": null,
+                    "imageName": "beverages"
+                },
+                {
+                    "id": "649d360c-b58f-4ec8-9b00-7122bb4750fb",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "coffee",
+                    "name": null,
+                    "imageName": "coffee"
+                },
+                {
+                    "id": "31b4d8ec-c31f-4c9f-a188-a6975fe74cf0",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "candyStore",
+                    "name": null,
+                    "imageName": "candyStore"
+                },
+                {
+                    "id": "0381eaa4-aef0-4628-bb6a-ce03bed9aaf5",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "food",
+                    "name": null,
+                    "imageName": "food"
+                },
+                {
+                    "id": "7345cb56-e96e-41b5-a32a-b49a9cdd42b7",
+                    "categoryId": "db84e832-0150-4578-9d0f-4a58a8f31681",
+                    "localizedNameId": "restaurant",
+                    "name": null,
+                    "imageName": "restaurant"
+                }
+            ]
+        },
+        {
+            "id": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+            "localizedNameId": "housing",
+            "name": null,
+            "colorName": "HousingColor",
+            "subCategories": [
+                {
+                    "id": "afce7132-2971-4f7e-89d5-a302196251d3",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "water",
+                    "name": null,
+                    "imageName": "water"
+                },
+                {
+                    "id": "62db7d4b-d7f4-43a9-bcc1-8da03184bda6",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "electricity",
+                    "name": null,
+                    "imageName": "electricity"
+                },
+                {
+                    "id": "844f64db-ad85-43c2-b094-a1e1a3639be7",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "gas",
+                    "name": null,
+                    "imageName": "gas"
+                },
+                {
+                    "id": "255e4696-58a1-4baa-add7-120e4f039819",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "internet",
+                    "name": null,
+                    "imageName": "internet"
+                },
+                {
+                    "id": "1a452236-7e31-408e-97d5-7b17e102b7be",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "television",
+                    "name": null,
+                    "imageName": "television"
+                },
+                {
+                    "id": "3d8ba58c-d505-4888-be97-5cea2d795247",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "taxes",
+                    "name": null,
+                    "imageName": "taxes"
+                },
+                {
+                    "id": "afac6879-8c5d-4a18-adb3-0987c5b09fcc",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "homeInsurance",
+                    "name": null,
+                    "imageName": "homeInsurance"
+                },
+                {
+                    "id": "b1099998-415a-4c7f-a075-6e031dd5fc23",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "rent",
+                    "name": null,
+                    "imageName": "rent"
+                },
+                {
+                    "id": "403e9935-9657-4993-8085-1adfb16cb389",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "maintenance",
+                    "name": null,
+                    "imageName": "maintenance"
+                },
+                {
+                    "id": "9e5554cc-8dcc-4c8c-bab8-11fd6c6c41fe",
+                    "categoryId": "11e80ee7-6868-44b4-ab2c-0cd3178abe71",
+                    "localizedNameId": "mortgage",
+                    "name": null,
+                    "imageName": "mortgage"
+                }
+            ]
+        },
+        {
+            "id": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+            "localizedNameId": "income",
+            "name": null,
+            "colorName": "IncomeColor",
+            "subCategories": [
+                {
+                    "id": "8f5751f9-0ca4-46c7-b2ba-6cb04108f949",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "income",
+                    "name": null,
+                    "imageName": "income"
+                },
+                {
+                    "id": "9678a246-6584-4353-995a-ed2f401d4a6f",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "interest",
+                    "name": null,
+                    "imageName": "interest"
+                },
+                {
+                    "id": "60bef910-addb-44fe-b5ca-539e61c2e029",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "investments",
+                    "name": null,
+                    "imageName": "investments"
+                },
+                {
+                    "id": "f1e5dc68-d6ce-4708-9615-2116b8464662",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "pension",
+                    "name": null,
+                    "imageName": "pension"
+                },
+                {
+                    "id": "2a5a06ea-5563-425d-886f-6ff02541e309",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "childBenefit",
+                    "name": null,
+                    "imageName": "childBenefit"
+                },
+                {
+                    "id": "79c0cdf6-48d9-4aa9-960c-20c5898256ae",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "salary",
+                    "name": null,
+                    "imageName": "salary"
+                },
+                {
+                    "id": "dee7d015-1062-4ed7-9d5e-d43bf85a8a2d",
+                    "categoryId": "a761daf8-6b8a-43a4-8ecb-a86289538392",
+                    "localizedNameId": "scholarship",
+                    "name": null,
+                    "imageName": "scholarship"
+                }
+            ]
+        },
+        {
+            "id": "82548cad-5370-46de-b90c-8a046c245150",
+            "localizedNameId": "lifestyle",
+            "name": null,
+            "colorName": "LifestyleColor",
+            "subCategories": [
+                {
+                    "id": "46e4ce9d-2b1e-40e4-80bc-51a7dd47e658",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "clothing",
+                    "name": null,
+                    "imageName": "clothing"
+                },
+                {
+                    "id": "41732568-dc6c-4b21-b629-520810379940",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "charity",
+                    "name": null,
+                    "imageName": "charity"
+                },
+                {
+                    "id": "3573e0df-1952-4adc-8218-fd47b0f9e585",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "shopping",
+                    "name": null,
+                    "imageName": "shopping"
+                },
+                {
+                    "id": "fedfcbd4-eab3-484e-8b34-d08d15a6c776",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "community",
+                    "name": null,
+                    "imageName": "community"
+                },
+                {
+                    "id": "295840fb-3eeb-4dd5-93b6-40d4bc36c70c",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "dentist",
+                    "name": null,
+                    "imageName": "dentist"
+                },
+                {
+                    "id": "4eada00b-c645-4834-a88f-72b9d0d05a09",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "education",
+                    "name": null,
+                    "imageName": "education"
+                },
+                {
+                    "id": "4983139e-4dbc-4a38-85b0-c9c0021d2eb1",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "lifestyle",
+                    "name": null,
+                    "imageName": "lifestyle"
+                },
+                {
+                    "id": "c7274c03-ca7d-4cee-a582-f0ae0a743456",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "pharmacy",
+                    "name": null,
+                    "imageName": "pharmacy"
+                },
+                {
+                    "id": "af076ae8-2afd-42f6-90ca-70458ac64753",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "officeExpenses",
+                    "name": null,
+                    "imageName": "officeExpenses"
+                },
+                {
+                    "id": "6d659ae6-9758-4544-8178-8e8bb106e98f",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "daycare",
+                    "name": null,
+                    "imageName": "daycare"
+                },
+                {
+                    "id": "83b888ef-fe2b-4880-b54f-4dce74e321ac",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "hotel",
+                    "name": null,
+                    "imageName": "hotel"
+                },
+                {
+                    "id": "84aa1519-7e93-415b-a338-df830b1f00ef",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "pet",
+                    "name": null,
+                    "imageName": "pet"
+                },
+                {
+                    "id": "f934435d-5f10-437c-8dff-ad9fce01228e",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "medical",
+                    "name": null,
+                    "imageName": "medical"
+                },
+                {
+                    "id": "78e5f45d-eb2c-41d8-ae63-c5255ad9e918",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "gift",
+                    "name": null,
+                    "imageName": "gift"
+                },
+                {
+                    "id": "130c99a4-12b0-4bae-a65a-5d46595a46bc",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "work",
+                    "name": null,
+                    "imageName": "work"
+                },
+                {
+                    "id": "d49c4ffe-8fbf-412e-89dc-7408bc2fe619",
+                    "categoryId": "82548cad-5370-46de-b90c-8a046c245150",
+                    "localizedNameId": "travel",
+                    "name": null,
+                    "imageName": "travel"
+                }
+            ]
+        },
+        {
+            "id": "ced6001a-7223-4597-b3be-9792a146a426",
+            "localizedNameId": "savings",
+            "name": null,
+            "colorName": "SavingsColor",
+            "subCategories": [
+                {
+                    "id": "ba8377ff-acc6-4fd9-91be-d8be4d12ea16",
+                    "categoryId": "ced6001a-7223-4597-b3be-9792a146a426",
+                    "localizedNameId": "savings",
+                    "name": null,
+                    "imageName": "savings"
+                },
+                {
+                    "id": "c1ebba93-260c-4399-9e3c-9259211d3d2a",
+                    "categoryId": "ced6001a-7223-4597-b3be-9792a146a426",
+                    "localizedNameId": "ppr",
+                    "name": null,
+                    "imageName": "ppr"
+                }
+            ]
+        },
+        {
+            "id": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+            "localizedNameId": "transport",
+            "name": null,
+            "colorName": "TransportColor",
+            "subCategories": [
+                {
+                    "id": "94a8f192-0c55-4085-b259-7e715aa16c27",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "vehicleTax",
+                    "name": null,
+                    "imageName": "vehicleTax"
+                },
+                {
+                    "id": "19bc7f4a-081b-46d6-82fc-0e46931c9bbb",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "carLoan",
+                    "name": null,
+                    "imageName": "carLoan"
+                },
+                {
+                    "id": "86b11ac7-2adf-400a-af21-735b65b2b4c2",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "carRental",
+                    "name": null,
+                    "imageName": "carRental"
+                },
+                {
+                    "id": "3fb73705-a2f2-412c-aa1e-b62f65740634",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "maintenance",
+                    "name": null,
+                    "imageName": "maintenance"
+                },
+                {
+                    "id": "67a6ce46-d127-49ca-96bd-b0bc54daec4f",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "gasoline",
+                    "name": null,
+                    "imageName": "gasoline"
+                },
+                {
+                    "id": "49847002-be61-42f1-a4a5-93e87697034d",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "parking",
+                    "name": null,
+                    "imageName": "parking"
+                },
+                {
+                    "id": "655b3111-ffab-45c5-a377-224cf5113019",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "tolls",
+                    "name": null,
+                    "imageName": "tolls"
+                },
+                {
+                    "id": "971b8e62-b287-4361-b559-b21358b61a50",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "repair",
+                    "name": null,
+                    "imageName": "repair"
+                },
+                {
+                    "id": "a78377ec-0640-4ee6-996c-c2c9dcf28a9a",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "carInsurance",
+                    "name": null,
+                    "imageName": "carInsurance"
+                },
+                {
+                    "id": "60d8ef34-2829-468f-b91f-5dc52dbbd5b5",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "taxi",
+                    "name": null,
+                    "imageName": "taxi"
+                },
+                {
+                    "id": "833bd490-a33e-4559-be5f-838c74650771",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "publicTransport",
+                    "name": null,
+                    "imageName": "publicTransport"
+                },
+                {
+                    "id": "497f561f-b097-4a93-b7fe-f51da19203d5",
+                    "categoryId": "1e48e173-7756-4aaa-803b-8dc7b87bb766",
+                    "localizedNameId": "flight",
+                    "name": null,
+                    "imageName": "flight"
+                }
+            ]
+        }
+    ]
+}

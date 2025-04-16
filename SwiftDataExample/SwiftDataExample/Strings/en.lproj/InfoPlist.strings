@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  PFM
+
+  Created by Javier Cruz Santiago on 31/07/24.
+  
+*/
+
+NSUserNotificationUsageDescription="Remember to record your movements at the end of the day, consult reports and view information for the current period.";
+NSCameraUsageDescription="Take pictures of your receipts for a better control.";
+NSPhotoLibraryUsageDescription="Add previously saved photos of your tickets to your records.";
