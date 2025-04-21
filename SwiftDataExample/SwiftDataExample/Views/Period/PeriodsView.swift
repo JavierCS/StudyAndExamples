@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct PeriodsView: View {
     @Environment(\.modelContext) var modelContext
     
+    @Query private var periods: [Period]
+    
     var body: some View {
-        List {
-            
+        List(periods) { period in
+            PeriodView(period: period)
+                .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
         .navigationTitle("Periods")
         .navigationBarTitleDisplayMode(.large)
     }

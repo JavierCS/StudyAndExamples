@@ -23,13 +23,13 @@ struct CategoriesView: View {
         .listStyle(.plain)
         .navigationTitle("Categories")
         .navigationBarTitleDisplayMode(.large)
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Button("", systemImage: "plus") {
-                    showCategoryForm.toggle()
-                }
-            }
-        }
+//        .toolbar {
+//            ToolbarItem(placement: .primaryAction) {
+//                Button("", systemImage: "plus") {
+//                    showCategoryForm.toggle()
+//                }
+//            }
+//        }
         .sheet(isPresented: $showCategoryForm) {
             NavigationStack {
                 NewCategoryView()
